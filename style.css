@@ -1,0 +1,35 @@
+:root{
+    background-color: #8a2be266;
+}
+
+blank {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: big;
+}
+
+header {
+    background-color: #a52a2a99;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+header a {
+    color: #00ffff66;
+}
+
+.textboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+    row-gap: 2%;
+    background-color: #7fffd4bb;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.theLib {
+    background-color: #adff2fbb;
+    font-size: 130%;
+}
