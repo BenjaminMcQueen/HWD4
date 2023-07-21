@@ -2,10 +2,18 @@
     background-color: #8a2be266;
 }
 
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+
 blank {
     text-decoration: underline;
     font-style: italic;
     font-size: big;
+}
+
+input {
+    text-align: center;
 }
 
 header {
@@ -13,6 +21,7 @@ header {
     color: white;
     padding: 1%;
     border-radius: 5px;
+    text-align: center;
 }
 
 header a {
@@ -20,7 +29,10 @@ header a {
 }
 
 .textboxes {
-    display: grid;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1%;
     row-gap: 2%;
@@ -34,6 +46,11 @@ header a {
     font-size: 130%;
 }
 
+.hidden {
+    color: #00000000;
+    background-color: #00000000;
+}
+
 .block {
     display: block;
     width: 100%;
@@ -43,4 +60,35 @@ header a {
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+  }
+
+  @media (min-width: 777px) {
+    input{
+        width: 30%;
+        height: 35px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size:x-large;
+      }
+      
+      input {
+        font-size:x-large;
+      }
+
+      .theLib {
+        font-size:x-large;
+      }
+
+      .block {
+        font-size:x-large;
+      }
+
+      h1 {
+        font-size: 300%;
+      }
+
+      p {
+        font-size: x-large;
+      }
   }
