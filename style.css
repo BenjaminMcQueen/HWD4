@@ -32,13 +32,16 @@ header a {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1%;
-    row-gap: 2%;
     background-color: #7fffd4bb;
     padding: 2%;
     border-radius: 5px;
+}
+
+.textboxes input {
+    margin-left: 2vw;
+    margin-top: 0.3%;
 }
 
 .theLib {
